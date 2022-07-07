@@ -11,6 +11,23 @@ st.set_page_config(page_title="Travel Insurance",
 st.title("Travel Insurance Prediction Project")
 st.markdown("##")
 
+"""
+This travel insurance project is created to help the Tour and Travel company
+to promote their travel insurance product to old customer. The new insurance
+cover covid 19 protection. The project is to predict wether their customer
+from 2019 before covid will buy a new travel insurance program or not, so 
+the company will get valuable insight to help them make decision.
+
+In this project I'm doing some exploratory data analysis and make a simple
+dashboard to help finding a pattern and correlation about the customer decision,
+and after that I'm developing machine learning app to predict it.
+
+The data is retreived from kaggle: https://www.kaggle.com/datasets/tejashvi14/travel-insurance-prediction-data
+
+Let's take a look at the dataset and data visualisation
+
+"""
+
 def get_data():    
     df = pd.read_csv("TravelInsurancePrediction.csv")
     df.drop(df.columns[0], axis=1, inplace=True)
